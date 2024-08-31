@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khusus Untuk Naysilla Tercinta</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2c/fxFf9Ma8qEaW+QDRWJD4lOiMd3sRFyUOf7FeaGZXMO4sSRcPp/EI5S0mL29R4Tyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #0072ff;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #0072ff;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 114, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button i {
+            margin-right: 8px;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 114, 255, 0.5);
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #555;
+        }
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 18px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-heart"></i> Untuk Naysilla Ashari</h1>
+        <button onclick="generateRandomGombal()">
+            <i class="fas fa-magic"></i> Klik ini ya bro
+        </button>
+        <p id="result"></p>
+    </div>
+    <script>
+        const gombalanArray = [
+            "Kalau kamu jadi senja, aku rela jadi malam agar bisa menemanimu hingga pagi.",
+            "Kamu tahu nggak, aku ini ibarat kopi dan kamu itu gula. Kopi tanpa gula terasa pahit, begitupun aku tanpa kamu.",
+            "Seandainya aku jadi wakil rakyat, aku akan bikin undang-undang yang menyatakan bahwa mencintaimu adalah hak asasi.",
+            "Matahari terbenam di barat, tapi cintaku hanya terbenam di hatimu.",
+            "Kamu tau nggak? Kalo jarak antara kita itu kayak bintang. Dekat di hati, tapi jauh di mata.",
+            "Aku nggak bisa janji akan jadi pacar yang sempurna, tapi aku bisa janji kalau aku akan berusaha jadi yang terbaik buat kamu.",
+            "Kalau aku jadi kata, kamu jadi makna. Tanpa kamu, aku cuma kata tanpa arti.",
+            "Jika aku menjadi hujan, aku akan selalu mencari cara untuk menyentuhmu meskipun hanya sekali.",
+            "Kamu seperti angin, meskipun tak selalu terlihat, tapi aku selalu bisa merasakannya.",
+            "Setiap kali aku melihat bintang, aku hanya bisa berpikir tentangmu, karena kamu adalah bintang yang paling terang di langitku.",
+            "Cintaku padamu itu seperti bayangan, selalu ada di dekatmu meskipun kadang tak terlihat.",
+            "Kalau ada yang bertanya kenapa aku suka kamu, aku hanya bisa menjawab, 'Karena kamu adalah kamu.'",
+            "Kamu itu seperti cuaca, tak bisa aku prediksi, tapi selalu membuatku ingin tahu lebih.",
+            "Kalau cintaku padamu seperti matematika, maka kamu adalah solusi dari semua perhitunganku.",
+            "Aku ingin menjadi alasan di balik senyummu setiap hari."
+        ];
+
+        function generateRandomGombal() {
+            var randomIndex = Math.floor(Math.random() * gombalanArray.length);
+            var randomGombal = gombalanArray[randomIndex];
+            var resultElement = document.getElementById("result");
+
+            resultElement.innerHTML = randomGombal;
+        }
+    </script>
+</body>
+</html>
